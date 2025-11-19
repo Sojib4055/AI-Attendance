@@ -1,0 +1,10 @@
+opencv-python
+numpy
+torch
+torchvision
+sqlalchemy
+pyyaml
+streamlit
+fastapi
+uvicorn
+python-multipart

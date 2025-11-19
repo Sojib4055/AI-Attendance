@@ -1,0 +1,17 @@
+device: cuda
+db_url: sqlite:///iris_attendance.db
+
+models:
+  iritrack_cascade: data/haarcascade_eye.xml   # placeholder for IriTrack
+  ritnet: models/segmentation/ritnet_model.pth # TODO: replace with real RITnet weights
+  deepirisnet2: models/encoding/deepirisnet2_model.pth # TODO: replace with real DeepIrisNet2
+
+norm:
+  radial_res: 64
+  angular_res: 512
+
+match:
+  threshold: 0.7
+
+video:
+  frame_skip: 5
